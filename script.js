@@ -1,24 +1,27 @@
-import{getJSON} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.0/api.js";
-import{renderHTML} from "https://cdn.jsdelivr.net/gh/jscroot/lib@0.2.0/element.js";
+// Import necessary functions from the library
+import { getJSON } from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.7/croot.js";
+import { renderHTML, setInner } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
 
-getJSON ("http://t.if.co.id/714240060/",null,null,responseFunction);
-renderHTML("root", "home.html");
+const targetUrl = "https://t.if.co.id/json/Bagus.json";
 
-function renderDatadariJson(){
-    getJSON("http://t.if.co.id/json/bagus.json","coba","coba lagi", responseFunction)
-}
-console.log("renderDatadariJson", renderDatadariJson());
+// Fetch JSON data from the provided URL
+getJSON(targetUrl, "null", "null", responseFunction);
 
-function responseFunction(response){
-    if(response.status === 200) {
-       console.log('HTTP Status:', response.status);
-       console.log('Response Data:', response.data);
-    
-    }else{
-        console.error("Eror fetching data:", response
-        )
-    }
+// Function to handle the response and render the content
+function responseFunction(response) {
+    console.log('HTTP Status:', response.status);
+    console.log('Response Data:', response.data);
 
-   
 
+   // renderHTML('loading', staticHTML);
+
+    // Prepare the dynamic HTML content (skills, rate, social icons)
+    //const additionalHTML = `
+
+    // Insert the dynamic content using setInner
+   // setInner("cardbenar", additionalHTML);
+
+    // Hide the loading message and show the main content
+    //document.getElementById('loading').style.display = 'none';
+    //document.getElementById('main-content').style.display = 'block';
 }
