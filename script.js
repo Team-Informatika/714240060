@@ -3,7 +3,7 @@ import { getJSON } from "https://cdn.jsdelivr.net/gh/jscroot/api@0.0.7/croot.js"
 import { renderHTML, setInner } from "https://cdn.jsdelivr.net/gh/jscroot/element@0.1.5/croot.js";
 
 <<<<<<< HEAD
-const targetUrl = "https://t.if.co.id/json/Fauzi.json";
+const targetUrl = "https://t.if.co.id/json/Bagus.json";
 =======
 const targetUrl = "https://t.if.co.id/json/Bagus.json";
 >>>>>>> 326189d45b2ddd47bb8f1341324ec20a584d0cf2
